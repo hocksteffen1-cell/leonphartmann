@@ -74,6 +74,65 @@
     .card p, .container p, li {
       color: #cfcfcf;
     }
+    .about-section {
+  background: radial-gradient(circle at top, #11242b, #0d0f14 65%);
+  text-align: center;
+}
+
+.about-intro {
+  max-width: 820px;
+  margin: 0 auto 45px;
+  font-size: 20px;
+  color: #d8d8d8;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.about-card {
+  background: rgba(21, 25, 36, 0.92);
+  border: 1px solid #31404a;
+  border-radius: 22px;
+  padding: 34px 24px;
+  min-height: 260px;
+}
+
+.about-card h3 {
+  color: #ffffff;
+  font-size: 22px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.about-line {
+  width: 46px;
+  height: 2px;
+  background: #d6b36a;
+  margin: 0 auto 20px;
+}
+
+.about-quote {
+  margin-top: 45px;
+  font-style: italic;
+  color: #e7e7e7;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}
     .steps {
       counter-reset: step;
     }
@@ -128,64 +187,48 @@
       <a class="btn secondary" href="#contact">Book a Service</a>
     </div>
   </header>
-  <section id="about">
+  <section id="about" class="about-section">
   <div class="container">
-    <div class="grid">
 
-      <div class="card" style="text-align:center;">
-        <img src="author.png" alt="Leon P. Hartmann"
-             style="width:100%; max-width:320px; border-radius:16px;">
+    <h2>About Leon P. Hartmann</h2>
+
+    <p class="about-intro">
+      I help authors, freelancers, and entrepreneurs build a stronger presence on Amazon
+      with professional publishing support, clear communication, and practical experience.
+    </p>
+
+    <div class="about-cards">
+
+      <div class="about-card">
+        <h3>Published Author</h3>
+        <div class="about-line"></div>
+        <p>Multiple books published on Amazon, including practical AI guides and online business titles.</p>
       </div>
 
-      <div class="card">
-        <h2>Meet Leon P. Hartmann</h2>
+      <div class="about-card">
+        <h3>3 Languages</h3>
+        <div class="about-line"></div>
+        <p>Support for German, English, and Spanish projects — ideal for international authors.</p>
+      </div>
 
-        <p>
-          I'm an author and Amazon publishing specialist helping writers,
-          freelancers, and entrepreneurs create a professional presence on Amazon.
-        </p>
+      <div class="about-card">
+        <h3>Amazon Publishing</h3>
+        <div class="about-line"></div>
+        <p>A+ Content, book descriptions, Author Central support, and practical KDP guidance.</p>
+      </div>
 
-        <br>
-
-        <p>
-          My services include Amazon A+ Content, book descriptions,
-          Author Central support, translations, and complete publishing assistance.
-        </p>
-
-        <br>
-
-        <p>
-          I believe in practical solutions, honest communication,
-          and high-quality work that helps authors present their books professionally.
-         <div class="grid" style="margin-top:35px;">
-
-  <div class="card">
-    <h3>Published Author</h3>
-    <p>Multiple books available on Amazon.</p>
-  </div>
-
-  <div class="card">
-    <h3>3 Languages</h3>
-    <p>German • English • Spanish</p>
-  </div>
-
-  <div class="card">
-    <h3>Amazon Publishing</h3>
-    <p>A+ Content, book descriptions and publishing support.</p>
-  </div>
-
-  <div class="card">
-    <h3>Personal Support</h3>
-    <p>Direct communication from start to finish.</p>
-  </div>
-
-</div>
-</div>
-        </p>
-
+      <div class="about-card">
+        <h3>Personal Support</h3>
+        <div class="about-line"></div>
+        <p>Direct communication from start to finish, with a clear workflow and practical delivery.</p>
       </div>
 
     </div>
+
+    <p class="about-quote">
+      “Practical publishing support for authors who want their books to look professional.”
+    </p>
+
   </div>
 </section>
   
